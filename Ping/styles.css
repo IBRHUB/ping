@@ -1,0 +1,199 @@
+/* Light Mode Colors */
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 60rem;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333;
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Button */
+body.dark-mode button {
+    background-color: #8A2BE2;
+}
+
+body.dark-mode button:hover {
+    background-color: #6a4fb1;
+}
+
+table {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Table */
+body.dark-mode table {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+thead tr {
+    background-color: #eef;
+    text-align: left;
+}
+
+/* Dark Mode Table Header */
+body.dark-mode thead tr {
+    background-color: #444;
+}
+
+thead th {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Dark Mode Table Header Text */
+body.dark-mode thead th {
+    color: #e0e0e0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Dark Mode Odd Rows */
+body.dark-mode tbody tr:nth-child(odd) {
+    background-color: #555;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Dark Mode Even Rows */
+body.dark-mode tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+td {
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.service-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #007BFF;
+    text-align: center;
+}
+
+.service-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-name a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.latency {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Dark Mode Latency Text */
+body.dark-mode .latency {
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+/* Dark Mode Footer */
+body.dark-mode footer {
+    background-color: #444;
+}
+
+/* RTL Text */
+.rtl-text {
+    font-size: 24px;
+    text-align: right;
+    direction: rtl;
+    margin: 20px 0;
+}
+
+/* Region Table */
+.region-table {
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.region-table thead tr {
+    background-color: #eef;
+    text-align: left;
+}
+
+body.dark-mode .region-table thead tr {
+    background-color: #444;
+}
+
+.region-table th,
+.region-table td {
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.region-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+body.dark-mode .region-table tbody tr:nth-child(odd) {
+    background-color: #555;
+}
+
+.region-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+body.dark-mode .region-table tbody tr:nth-child(even) {
+    background-color: #444;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IBRHUB CLOUD PING</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="A website for measuring network latency from your browser to various cloud provider datacenters around the world.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        header {
+            text-align: center; /* يجعل المحتوى في المنتصف */
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #007BFF; /* لون النص */
+        }
+
+        .switch {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        hr {
+            margin-top: 1rem;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>IBRHUB CLOUD PING</h1>
+    <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+    </label>
+    <hr />
+</header>
+
+<main>
+    <p class="rtl-text">انقر فوق الزر "اضغط هنا" لقياس البنق من متصفحك إلى مراكز بيانات موفري الخدمات السحابية المختلفة "للألعاب"</p>
+    <p style="text-align: center;">
+        <button id="pingButton">اضغط هنا للتحقق من البنق</button>
+    </p>
+
+    <!-- Europe Servers -->
+    <table class="region-table">
+        <thead>
+            <tr>
+                <th>Region Europe </th>
+                <th>Latency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>eu-west-1 (Ireland) | ايرلاندا</td>
+                <td class="latency" pingUrl="https://dynamodb.eu-west-1.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>eu-west-2 (London) | لندن</td>
+                <td class="latency" pingUrl="https://dynamodb.eu-west-2.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Middle East Servers -->
+    <table class="region-table">
+        <thead>
+            <tr>
+                <th>Region Middle East</th>
+                <th>Latency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>me-south-1 (Bahrain) | البحرين</td>
+                <td class="latency" pingUrl="https://dynamodb.me-south-1.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>me-central-1 (UAE) | الامارات</td>
+                <td class="latency" pingUrl="https://dynamodb.me-central-1.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- America Servers -->
+    <table class="region-table">
+        <thead>
+            <tr>
+                <th>Region America</th>
+                <th>Latency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>us-east-1 (Virginia) | فرجينيا</td>
+                <td class="latency" pingUrl="https://dynamodb.us-east-1.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>us-east-2 (Ohio) | أوهايو</td>
+                <td class="latency" pingUrl="https://dynamodb.us-east-2.amazonaws.com/ping">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
